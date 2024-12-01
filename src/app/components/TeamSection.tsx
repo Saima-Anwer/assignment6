@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function TeamSection() {
   return (
     <div className="w-[320px] md:w-[1280px] px-4 md:px-16 py-12 md:py-28 bg-[#f6f6f6] 
@@ -16,9 +18,10 @@ export default function TeamSection() {
         {/* First Row - Always visible */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-16">
           <div className="flex flex-col justify-start items-center gap-6">
-            <img
+            <Image alt=""
               className="w-20 h-20"
               src="/team/Image1.svg"
+              width={80} height={80}
             />
             <div className="flex flex-col justify-start items-center gap-4">
               <div className="flex flex-col justify-start items-center">
@@ -28,6 +31,8 @@ export default function TeamSection() {
                 <div className="text-center text-black text-lg font-normal font-['Roboto'] leading-[27px]">
                   Marketing Coordinator
                 </div>
+                <Image src="/icons/Social-Icons2.png" alt="Socials" width={100} height={24}
+                 className="mt-[10px]"></Image>
               </div>
             </div>
             <div className="flex justify-start items-start gap-3.5">
@@ -37,9 +42,10 @@ export default function TeamSection() {
             </div>
           </div>
           <div className="flex flex-col justify-start items-center gap-6">
-            <img
+            <Image alt=""
               className="w-20 h-20"
               src="/team/Image2.svg"
+              width={80} height={80}
             />
             <div className="flex flex-col justify-start items-center gap-4">
               <div className="flex flex-col justify-start items-center">
@@ -49,6 +55,8 @@ export default function TeamSection() {
                 <div className="text-center text-black text-lg font-normal font-['Roboto'] leading-[27px]">
                   Nursing Assistant
                 </div>
+                <Image src="/icons/Social-Icons2.png" alt="Socials" width={100} height={24}
+                 className="mt-[10px]"></Image>
               </div>
             </div>
             <div className="flex justify-start items-start gap-3.5">
@@ -58,9 +66,10 @@ export default function TeamSection() {
             </div>
           </div>
           <div className="flex flex-col justify-start items-center gap-6">
-            <img
+            <Image alt=""
               className="w-20 h-20"
               src="/team/Image3.svg"
+              width={80} height={80}
             />
             <div className="flex flex-col justify-start items-center gap-4">
               <div className="flex flex-col justify-start items-center">
@@ -70,6 +79,8 @@ export default function TeamSection() {
                 <div className="text-center text-black text-lg font-normal font-['Roboto'] leading-[27px]">
                   Medical Assistant
                 </div>
+                <Image src="/icons/Social-Icons2.png" alt="Socials" width={100} height={24}
+                 className="mt-[10px]"></Image>
               </div>
             </div>
             <div className="flex justify-start items-start gap-3.5">
@@ -83,70 +94,78 @@ export default function TeamSection() {
         {/* Second Row - Hidden on mobile */}
         <div className="hidden md:grid md:grid-cols-3 gap-16">
           <div className="flex flex-col justify-start items-center gap-6">
-            <img
-              className="w-20 h-20"
-              src="/team/Image4.svg"
-            />
-            <div className="flex flex-col justify-start items-center gap-4">
-              <div className="flex flex-col justify-start items-center">
-                <div className="text-center text-black text-xl font-semibold font-['Roboto'] leading-[30px]">
-                  Erick Kipkemboi
-                </div>
-                <div className="text-center text-black text-lg font-normal font-['Roboto'] leading-[27px]">
-                  Web Designer
-                </div>
+            <Image alt=""
+            className="w-20 h-20"
+            src="/team/Image4.svg"
+            width={80} height={80}
+          />
+          <div className="flex flex-col justify-start items-center gap-4">
+            <div className="flex flex-col justify-start items-center">
+              <div className="text-center text-black text-xl font-semibold font-['Roboto'] leading-[30px]">
+                Erick Kipkemboi
               </div>
-            </div>
-            <div className="flex justify-start items-start gap-3.5">
-              <div className="w-6 h-6 p-[3px] flex justify-center items-center" />
-              <div className="w-6 h-6 px-[3px] pt-[4.50px] pb-[4.20px] flex justify-center items-center" />
-              <div className="w-6 h-6 p-[3px] flex justify-center items-center" />
+              <div className="text-center text-black text-lg font-normal font-['Roboto'] leading-[27px]">
+                Web Designer
+              </div>
+              <Image src="/icons/Social-Icons2.png" alt="Socials" width={100} height={24}
+               className="mt-[10px]"></Image>
             </div>
           </div>
-          <div className="flex flex-col justify-start items-center gap-6">
-            <img
-              className="w-20 h-20"
-              src="/team/Image5.svg"
-            />
-            <div className="flex flex-col justify-start items-center gap-4">
-              <div className="flex flex-col justify-start items-center">
-                <div className="text-center text-black text-xl font-semibold font-['Roboto'] leading-[30px]">
-                  Stephen Kerubo
-                </div>
-                <div className="text-center text-black text-lg font-normal font-['Roboto'] leading-[27px]">
-                  President of Sales
-                </div>
-              </div>
-            </div>
-            <div className="flex justify-start items-start gap-3.5">
-              <div className="w-6 h-6 p-[3px] flex justify-center items-center" />
-              <div className="w-6 h-6 px-[3px] pt-[4.50px] pb-[4.20px] flex justify-center items-center" />
-              <div className="w-6 h-6 p-[3px] flex justify-center items-center" />
-            </div>
-          </div>
-          <div className="flex flex-col justify-start items-center gap-6">
-            <img
-              className="w-20 h-20"
-              src="/team/Image6.svg"
-            />
-            <div className="flex flex-col justify-start items-center gap-4">
-              <div className="flex flex-col justify-start items-center">
-                <div className="text-center text-black text-xl font-semibold font-['Roboto'] leading-[30px]">
-                  John Leboo
-                </div>
-                <div className="text-center text-black text-lg font-normal font-['Roboto'] leading-[27px]">
-                  Dog Trainer
-                </div>
-              </div>
-            </div>
-            <div className="flex justify-start items-start gap-3.5">
-              <div className="w-6 h-6 p-[3px] flex justify-center items-center" />
-              <div className="w-6 h-6 px-[3px] pt-[4.50px] pb-[4.20px] flex justify-center items-center" />
-              <div className="w-6 h-6 p-[3px] flex justify-center items-center" />
-            </div>
+          <div className="flex justify-start items-start gap-3.5">
+            <div className="w-6 h-6 p-[3px] flex justify-center items-center" />
+            <div className="w-6 h-6 px-[3px] pt-[4.50px] pb-[4.20px] flex justify-center items-center" />
+            <div className="w-6 h-6 p-[3px] flex justify-center items-center" />
           </div>
         </div>
-
+        <div className="flex flex-col justify-start items-center gap-6">
+          <Image alt=""
+          className="w-20 h-20"
+          src="/team/Image5.svg"
+          width={80} height={80}
+        />
+        <div className="flex flex-col justify-start items-center gap-4">
+          <div className="flex flex-col justify-start items-center">
+            <div className="text-center text-black text-xl font-semibold font-['Roboto'] leading-[30px]">
+              Stephen Kerubo
+            </div>
+            <div className="text-center text-black text-lg font-normal font-['Roboto'] leading-[27px]">
+              President of Sales
+            </div>
+            <Image src="/icons/Social-Icons2.png" alt="Socials" width={100} height={24}
+             className="mt-[10px]"></Image>
+          </div>
+        </div>
+        <div className="flex justify-start items-start gap-3.5">
+          <div className="w-6 h-6 p-[3px] flex justify-center items-center" />
+          <div className="w-6 h-6 px-[3px] pt-[4.50px] pb-[4.20px] flex justify-center items-center" />
+          <div className="w-6 h-6 p-[3px] flex justify-center items-center" />
+        </div>
+      </div>
+      <div className="flex flex-col justify-start items-center gap-6">
+        <Image alt=""
+        className="w-20 h-20"
+        src="/team/Image6.svg"
+        width={80} height={80}
+      />
+      <div className="flex flex-col justify-start items-center gap-4">
+        <div className="flex flex-col justify-start items-center">
+          <div className="text-center text-black text-xl font-semibold font-['Roboto'] leading-[30px]">
+            John Leboo
+          </div>
+          <div className="text-center text-black text-lg font-normal font-['Roboto'] leading-[27px]">
+            Dog Trainer
+          </div>
+          <Image src="/icons/Social-Icons2.png" alt="Socials" width={100} height={24}
+           className="mt-[10px]"></Image>
+        </div>
+      </div>
+      <div className="flex justify-start items-start gap-3.5">
+        <div className="w-6 h-6 p-[3px] flex justify-center items-center" />
+        <div className="w-6 h-6 px-[3px] pt-[4.50px] pb-[4.20px] flex justify-center items-center" />
+        <div className="w-6 h-6 p-[3px] flex justify-center items-center" />
+      </div>
+    </div>
+  </div>
         {/* View All Button - Only visible on mobile */}
         <div className="md:hidden w-full flex justify-center">
           <button className="px-4 py-2 rounded-[5px] border border-black">
@@ -158,4 +177,4 @@ export default function TeamSection() {
       </div>
     </div>
   );
-}
+  }

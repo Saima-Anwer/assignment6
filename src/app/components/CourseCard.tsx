@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 interface Course{
     image:string,
     pname:string,
@@ -8,23 +10,27 @@ interface Course{
 export default function CourseCard({image, pname, title, description}:Course){
     return(
         <div className="w-[320px] md:w-[416px] h-[534px] bg-[#f6f6f6] rounded-[5px] flex-col justify-start items-start gap-6 flex">
-                  <img
+                  <Image alt=""
                     className="self-stretch h-[300px]"
                     src={image}
+                    width={416}
+                    height={300}
                   />
                   <div className="self-stretch h-[210px] px-4 pb-6 flex-col justify-start items-start gap-6 flex">
                     <div className="h-[122px] flex-col justify-start items-start gap-2 flex">
                       <div className="self-stretch justify-end items-start gap-2 inline-flex">
                         <div className="grow shrink basis-0 text-black text-sm font-semibold font-['Roboto'] leading-[21px]">
-                          {pname}
+                        {pname}
                         </div>
                         <div className=" justify-evenly items-center gap-1 flex flex-row">
                       <div className="flex items-center gap-2">
-                        <img
+                        <Image
                           src="/icons/star.svg"
                           alt="Star"
                           className="w-[24px] h-[24px] object-cover text-[#d9d9d9] 
                           opacity-55"
+                          width={24}
+                          height={24}
                         />
                         <span className="text-black text-sm font-semibold font-['Roboto']">
                           5.0
@@ -55,3 +61,4 @@ export default function CourseCard({image, pname, title, description}:Course){
                 </div>            
     )
 }
+                        

@@ -1,6 +1,5 @@
 import CourseCard from "../components/CourseCard"
 
-
 export default function Home() {
   return (
 <div className="w-[1280px] h-[1742px] px-16 py-28 bg-white border border-[#676767] flex-col justify-center items-center gap-[60px] inline-flex">
@@ -49,7 +48,6 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
-          
+        </div>        
   );
 }

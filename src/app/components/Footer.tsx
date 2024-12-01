@@ -1,3 +1,5 @@
+import Image from "next/image";
+import React from "react";
 function Footer() {
   return (
     <div
@@ -16,7 +18,7 @@ function Footer() {
             </div>
           </div>
           <div className="w-full md:w-[400px] flex-col justify-start items-start gap-4">
-            <div className="w-full flex flex-col sm:flex-row justify-start items-start gap-4">
+          <div className="w-full flex flex-col sm:flex-row justify-start items-start gap-4">
               <div className="w-full grow shrink basis-0 h-12 p-3 bg-white rounded-[5px] border border-black flex items-center">
                 <div className="grow shrink basis-0 text-[#4f4f4f] text-base font-normal font-['Roboto']">
                   Enter your email
@@ -38,7 +40,6 @@ function Footer() {
             </div>
           </div>
         </div>
-
         {/* Links Section */}
         <div className="w-full flex flex-col md:flex-row justify-center items-center md:justify-start md:items-start gap-10">
           {/* Logo Section */}
@@ -46,7 +47,7 @@ function Footer() {
             <div className="py-[29px] flex-col justify-center md:items-start items-center gap-[10.50px]">
               <div className="flex items-center justify-center gap-2">
                 <div className="w-[32.58px] h-[30.38px] md:relative md:justify-normal justify-center items-center md:items-start">
-                  <img src="/logos/Frame1.svg" />
+                  <Image src="/logos/Frame1.svg" alt="" width={32.58} height={30.38} />
                 </div>
                 <div className="text-black text-[25.07px] font-bold font-['Inter'] text-center md:text-justify">
                   Ddsgnr
@@ -98,7 +99,6 @@ function Footer() {
               ))}
             </div>
           </div>
-
           {/* About Us Section */}
           <div className="w-full md:w-1/4 flex-col justify-between items-center gap-4">
             <div className="text-black text-center md:text-justify font-semibold font-['Roboto']">
@@ -145,17 +145,18 @@ function Footer() {
               </div>
             </div>
           </div>
-
           {/* Row 3: Social Icons */}
           <div className="flex justify-center sm:justify-end items-center gap-3 w-full">
             {/* <div className="w-6 h-6 px-[7px] py-[3px] justify-center items-center flex" />
             <div className="w-6 h-6 p-[3px] justify-center items-center flex" />
             <div className="w-6 h-6 px-[3px] pt-[4.50px] pb-[4.20px] justify-center items-center flex" />
             <div className="w-6 h-6 p-[3px] justify-center items-center flex" /> */}
-            <img
+            <Image
               src="/icons/Social-Links.png"
               alt="Social Links"
               className="object-center"
+              width={132}
+              height={24}
             />
           </div>
         </div>
@@ -164,4 +165,4 @@ function Footer() {
   );
 }
 
-export default Footer;
+export default Footer; 

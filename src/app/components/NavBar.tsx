@@ -1,3 +1,4 @@
+import Image from "next/image"
 import HamburgerMenu from "./mobilemenu"
 
 export default function NavBar(){
@@ -7,7 +8,7 @@ export default function NavBar(){
                 {/* Logo and Brand Section */}
                 <div className="flex items-center gap-2 py-4">
                     <div className="w-[32.58px] h-[30.38px]">
-                        <img src="/logos/Frame1.svg" alt="Logo" className="w-full h-full" />
+                        <Image width={32.58} height={30.38} src="/logos/Frame1.svg" alt="Logo" className="w-full h-full" />
                     </div>
                     <div className="text-black text-[25.07px] font-bold font-['Inter']">
                         Ddsgnr
@@ -45,6 +46,7 @@ export default function NavBar(){
                         </a>
                         <a href="#" className="p-2.5">
                             <span className="text-black text-base font-normal font-['Roboto']">
+
                                 About Us
                             </span>
                         </a>
